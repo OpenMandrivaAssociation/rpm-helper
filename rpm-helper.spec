@@ -1,11 +1,11 @@
 Name:       rpm-helper
-Version:    0.18.5
+Version:    0.19
 Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
-Source0:    %{name}-%{version}.tar.bz2
 License:    GPL
 Group:      System/Configuration/Packaging
 URL:        http://www.mandrivalinux.com/
+Source0:    %{name}-%{version}.tar.bz2
 Requires:   grep
 Requires:   shadow-utils
 Requires:   chkconfig
@@ -35,8 +35,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README ChangeLog AUTHORS
+%doc README NEWS AUTHORS
 %{_datadir}/%{name}
 %{_sys_macros_dir}/%{name}.macros
-
-

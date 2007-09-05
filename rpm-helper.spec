@@ -1,5 +1,5 @@
 Name:       rpm-helper
-Version:    0.19.1
+Version:    0.19.2
 Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL
@@ -38,3 +38,4 @@ rm -rf %{buildroot}
 %doc README NEWS AUTHORS
 %{_datadir}/%{name}
 %{_sys_macros_dir}/%{name}.macros
+%config(noreplace) %{_sysconfdir}/sysconfig/ssl

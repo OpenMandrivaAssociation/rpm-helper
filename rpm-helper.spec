@@ -14,6 +14,7 @@ Requires:   coreutils
 Requires:   findutils
 Conflicts:  chkconfig < 1.3.4-10mdk
 BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 Helper scripts for rpm scriptlets to help create/remove :

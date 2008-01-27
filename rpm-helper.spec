@@ -1,5 +1,5 @@
 Name:       rpm-helper
-Version:    0.20.0
+Version:    0.21.0
 Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL
@@ -17,11 +17,7 @@ BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
-Helper scripts for rpm scriptlets to help create/remove :
-- groups
-- services
-- shells
-- users
+Helper scripts for rpm installation.
 
 %prep
 %setup -q

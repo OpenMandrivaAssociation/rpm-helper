@@ -1,6 +1,6 @@
 Name:       rpm-helper
-Version:    0.21.4
-Release:    %mkrel 3
+Version:    0.22.0
+Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL
 Group:      System/Configuration/Packaging

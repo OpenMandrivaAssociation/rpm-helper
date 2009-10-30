@@ -1,12 +1,11 @@
 Name:       rpm-helper
-Version:    0.22.1
-Release:    %mkrel 3
+Version:    0.22.2
+Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL
 Group:      System/Configuration/Packaging
 URL:        http://www.mandrivalinux.com/
 Source0:    %{name}-%{version}.tar.bz2
-Patch:      rpm-helper-0.22.1-fix-typo.patch
 Requires:   grep
 Requires:   shadow-utils
 Requires:   chkconfig
@@ -24,7 +23,6 @@ Helper scripts for rpm installation.
 
 %prep
 %setup -q
-%patch -p 1
 
 %install
 rm -rf %{buildroot}

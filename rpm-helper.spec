@@ -1,5 +1,5 @@
 Name:       rpm-helper
-Version:    0.22.2
+Version:    0.23.0
 Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL
@@ -27,6 +27,9 @@ Helper scripts for rpm installation.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+
+%check
+make test
 
 %clean
 rm -rf %{buildroot}

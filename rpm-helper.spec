@@ -1,5 +1,5 @@
 Name:       rpm-helper
-Version:    0.23.3
+Version:    0.23.4
 Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL

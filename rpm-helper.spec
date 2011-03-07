@@ -1,5 +1,5 @@
 Name:       rpm-helper
-Version:    0.23.6
+Version:    0.23.7
 Release:    %mkrel 1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL
@@ -14,7 +14,7 @@ Requires:   coreutils
 Requires:   findutils
 # for /etc/passwd and /etc/group
 Requires:   setup
-Conflicts:  chkconfig < 1.3.4-10mdk
+Conflicts:  chkconfig < 1.3.50
 BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 

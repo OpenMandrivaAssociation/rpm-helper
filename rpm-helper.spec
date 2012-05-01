@@ -1,6 +1,6 @@
 Name:       rpm-helper
-Version:    0.24.0
-Release:    3
+Version:    0.24.1
+Release:    1
 Summary:    Helper scripts for rpm scriptlets
 License:    GPL
 Group:      System/Configuration/Packaging
@@ -35,4 +35,5 @@ make test
 %doc README NEWS AUTHORS
 %{_datadir}/%{name}
 %{_sys_macros_dir}/%{name}.macros
+%{_localstatedir}/lib/%{name}
 %config(noreplace) %{_sysconfdir}/sysconfig/ssl

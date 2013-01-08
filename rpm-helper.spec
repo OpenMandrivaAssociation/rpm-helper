@@ -4,7 +4,7 @@ Release:	1
 Summary:	Helper scripts for rpm scriptlets
 License:	GPL
 Group:		System/Configuration/Packaging
-URL:		http://www.rosalinux.com/
+URL:		https://abf.rosalinux.ru/proyvind/rpm-helper
 Source0:	%{name}-%{version}.tar.bz2
 Requires:	grep
 Requires:	shadow-utils
@@ -40,4 +40,3 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 %{_localstatedir}/lib/%{name}
 %config(noreplace) %{_sysconfdir}/sysconfig/ssl
-

@@ -2,7 +2,7 @@ Name:		rpm-helper
 Version:	0.24.12
 Release:	1
 Summary:	Helper scripts for rpm scriptlets
-License:	GPL
+License:	GPLv2+
 Group:		System/Configuration/Packaging
 URL:		https://abf.rosalinux.ru/proyvind/rpm-helper
 Source0:	%{name}-%{version}.tar.bz2

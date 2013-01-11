@@ -31,8 +31,10 @@ Helper scripts for rpm installation.
 # Make sure these are always executable
 chmod 0755 %{buildroot}%{_datadir}/%{name}/*
 
-%check
-make test
+#%check
+# only test in place is for add-syslog, which is dependent on it's former perl
+# implementation
+#make test
 
 %files
 %doc README NEWS AUTHORS

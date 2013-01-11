@@ -5,7 +5,7 @@ Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
 URL:		https://abf.rosalinux.ru/proyvind/rpm-helper
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.xz
 Requires:	grep
 Requires:	shadow-utils
 Requires:	chkconfig

@@ -1,15 +1,16 @@
 Name:		rpm-helper
 Version:	0.24.12
-Release:	1
+Release:	2
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
 URL:		https://abf.rosalinux.ru/proyvind/rpm-helper
 Source0:	%{name}-%{version}.tar.xz
 Requires:	grep
-Requires:	shadow-utils
+Requires:	shadow-util
 Requires:	chkconfig
 Requires(pre):	coreutils
+Requires(pre):	shadow-utils
 # for addgroup which uses xargs
 Requires:	findutils
 # for /etc/passwd and /etc/group

@@ -7,7 +7,7 @@ Group:		System/Configuration/Packaging
 URL:		https://abf.rosalinux.ru/proyvind/rpm-helper
 Source0:	%{name}-%{version}.tar.xz
 Requires:	grep
-Requires:	shadow-util
+Requires:	shadow-utils
 Requires:	chkconfig
 Requires(pre):	coreutils
 Requires(pre):	shadow-utils

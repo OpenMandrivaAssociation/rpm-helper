@@ -1,6 +1,6 @@
 Name:		rpm-helper
 Version:	0.24.12
-Release:	10
+Release:	11
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
@@ -11,11 +11,11 @@ Requires:	util-linux
 Requires:	shadow-utils
 Requires:	chkconfig
 Requires(pre):	coreutils
-Requires(pre):	shadow-utils
+Requires(pre):	shadow-utils >= 4.2.1-7
 # for addgroup which uses xargs
 Requires:	findutils
 # for /etc/passwd and /etc/group
-Requires:	setup
+Requires:	setup >= 2.8.7-1
 # for /bin/systemctl
 Requires:	systemd-units
 #Conflicts:  chkconfig < 1.3.50-1

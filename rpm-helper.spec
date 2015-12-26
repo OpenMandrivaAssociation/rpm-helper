@@ -1,23 +1,23 @@
 Name:		rpm-helper
-Version:	0.24.15
-Release:	2
+Version:	0.24.17
+Release:	1
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
 URL:		https://abf.io/omv_software/rpm-helper
 Source0:	%{name}-%{version}.tar.xz
 Requires:	grep
-Requires:	util-linux
-Requires:	shadow-utils
-Requires:	chkconfig
-Requires(pre):	coreutils
-Requires(pre):	shadow-utils >= 4.2.1-7
+Requires:	util-linux >= 2.27.1
+Requires:	shadow >= 2:4.2.1-24
+Requires:	chkconfig >= 1.7
+Requires(pre):	coreutils >= 8.24
+Requires(pre):	shadow >= 2:4.2.1-24
 # for addgroup which uses xargs
 Requires:	findutils
 # for /etc/passwd and /etc/group
-Requires:	setup >= 2.8.7-1
+Requires:	setup >= 2.8.9
 # for /bin/systemctl
-Requires:	systemd-units
+Requires:	systemd >= 228
 #Conflicts:  chkconfig < 1.3.50-1
 BuildArch:	noarch
 

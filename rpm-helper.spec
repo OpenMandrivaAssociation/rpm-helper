@@ -1,10 +1,10 @@
 Name:		rpm-helper
 Version:	0.24.17
-Release:	1
+Release:	2
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
-URL:		https://abf.io/omv_software/rpm-helper
+URL:		https://github.com/OpenMandrivaSoftware/rpm-helper
 Source0:	%{name}-%{version}.tar.xz
 Requires:	grep
 Requires:	util-linux >= 2.27.1

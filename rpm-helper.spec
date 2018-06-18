@@ -1,23 +1,23 @@
 Name:		rpm-helper
 Version:	0.24.17
-Release:	3
+Release:	4
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
 URL:		https://github.com/OpenMandrivaSoftware/rpm-helper
 Source0:	%{name}-%{version}.tar.xz
-Requires:	grep
-Requires:	util-linux >= 2.27.1
-Requires:	shadow >= 2:4.5
-Requires:	chkconfig >= 1.7
+Requires(pre):	grep
+Requires(pre):	util-linux >= 2.27.1
+Requires(pre):	shadow >= 2:4.5
+Requires(pre):	chkconfig >= 1.7
 Requires(pre):	coreutils >= 8.24
-Requires(pre):	shadow >= 2:4.2.1-24
 # for addgroup which uses xargs
-Requires:	findutils
+Requires(pre):	findutils
 # for /etc/passwd and /etc/group
-Requires:	setup >= 2.8.9
+Requires(pre):	setup >= 2.8.9
 # for /bin/systemctl
-Requires:	systemd >= 228
+Requires(pre):	systemd >= 228
+Requires(pre):	/bin/sh
 #Conflicts:  chkconfig < 1.3.50-1
 BuildArch:	noarch
 
@@ -37,6 +37,9 @@ chmod 0755 %{buildroot}%{_datadir}/%{name}/*
 # only test in place is for add-syslog, which is dependent on it's former perl
 # implementation
 #make test
+
+%pre
+printf '%s\n' "Installing prerequired packages"
 
 %files
 %doc README NEWS AUTHORS

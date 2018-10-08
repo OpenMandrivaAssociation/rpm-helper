@@ -1,11 +1,17 @@
+%bcond_without debug
+
 Name:		rpm-helper
 Version:	0.24.17
-Release:	5
+Release:	6
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
 URL:		https://github.com/OpenMandrivaSoftware/rpm-helper
 Source0:	%{name}-%{version}.tar.xz
+%if %{with debug}
+Patch0:		rpm-helper-debug-useradd.patch
+Requires:	strace
+%endif
 Requires(pre):	grep
 Requires(pre):	util-linux >= 2.27.1
 Requires(pre):	shadow >= 2:4.5
@@ -25,7 +31,7 @@ BuildArch:	noarch
 Helper scripts for rpm installation.
 
 %prep
-%setup -q
+%autosetup
 
 %install
 %makeinstall_std

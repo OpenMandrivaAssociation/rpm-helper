@@ -10,6 +10,7 @@ URL:		https://github.com/OpenMandrivaSoftware/rpm-helper
 Source0:	%{name}-%{version}.tar.xz
 %if %{with debug}
 Patch0:		rpm-helper-debug-useradd.patch
+Patch1:		try-to-print-cmdline.patch
 Requires:	strace
 %endif
 Requires(pre):	grep

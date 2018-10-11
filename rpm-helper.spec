@@ -1,8 +1,8 @@
-%bcond_without debug
+%bcond_with debug
 
 Name:		rpm-helper
 Version:	0.24.17
-Release:	7
+Release:	8
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging

@@ -1,0 +1,20 @@
+diff --git a/add-group b/add-group
+index 603466e..41d718b 100755
+--- a/add-group
++++ b/add-group
+@@ -1,4 +1,5 @@
+ #!/bin/sh
++set -o xtrace
+ #---------------------------------------------------------------
+ # Project         : Mandriva Linux
+ # Module          : rpm-helper
+diff --git a/add-user b/add-user
+index ac54186..a839d33 100755
+--- a/add-user
++++ b/add-user
+@@ -1,4 +1,5 @@
+ #!/bin/sh
++set -o xtrace
+ #---------------------------------------------------------------
+ # Project         : Mandriva Linux
+ # Module          : rpm-helper

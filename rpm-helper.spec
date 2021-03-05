@@ -2,7 +2,7 @@
 
 Name:		rpm-helper
 Version:	0.24.17
-Release:	9
+Release:	10
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
@@ -35,7 +35,7 @@ Helper scripts for rpm installation.
 %autosetup
 
 %install
-%makeinstall_std
+%make_install
 
 # Make sure these are always executable
 chmod 0755 %{buildroot}%{_datadir}/%{name}/*

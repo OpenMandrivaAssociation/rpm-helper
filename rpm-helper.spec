@@ -1,13 +1,13 @@
 %bcond_with debug
 
 Name:		rpm-helper
-Version:	0.24.18
+Version:	0.24.19
 Release:	1
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
 URL:		https://github.com/OpenMandrivaSoftware/rpm-helper
-Source0:	%{name}-%{version}.tar.gz
+Source0:	https://github.com/OpenMandrivaSoftware/rpm-helper/archive/refs/tags/%{version}.tar.gz
 %if %{with debug}
 Patch0:		rpm-helper-debug-useradd.patch
 Patch1:		try-to-print-cmdline.patch

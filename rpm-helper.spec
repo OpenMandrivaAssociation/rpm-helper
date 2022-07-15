@@ -1,7 +1,7 @@
 %bcond_with debug
 
 Name:		rpm-helper
-Version:	0.24.19
+Version:	0.24.20
 Release:	1
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
@@ -51,6 +51,6 @@ printf '%s\n' "Installing prerequired packages."
 %files
 %doc README NEWS AUTHORS
 %{_datadir}/%{name}
-%{_sysconfdir}/rpm/macros.d/%{name}.macros
+%{_usrlibrpm}/macros.d/macros.%{name}
 %{_localstatedir}/lib/%{name}
 %config(noreplace) %{_sysconfdir}/sysconfig/ssl

@@ -2,7 +2,7 @@
 
 Name:		rpm-helper
 Version:	0.24.20
-Release:	1
+Release:	2
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging

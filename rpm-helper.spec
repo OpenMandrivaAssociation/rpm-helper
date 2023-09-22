@@ -2,7 +2,7 @@
 
 Name:		rpm-helper
 Version:	0.24.20
-Release:	2
+Release:	3
 Summary:	Helper scripts for rpm scriptlets
 License:	GPLv2+
 Group:		System/Configuration/Packaging
@@ -16,7 +16,6 @@ Requires:	strace
 Requires:	grep
 Requires(pre):	shadow
 Requires:	shadow >= 2:4.5
-Requires:	chkconfig >= 1.7
 Requires:	coreutils >= 8.24
 # for addgroup which uses xargs
 Requires:	findutils
@@ -25,7 +24,6 @@ Requires:	setup >= 2.8.9
 # for /bin/systemctl
 Requires:	systemd >= 228
 Requires:	/bin/sh
-#Conflicts:  chkconfig < 1.3.50-1
 BuildArch:	noarch
 
 %description
